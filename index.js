@@ -125,7 +125,7 @@ if (get_gha_input('debug')) {
   console.log('--- render_options ---');
   console.table(render_options);
 }
-
+console.log(render_options)
 const sass_result = sass.renderSync(render_options);
 
 
