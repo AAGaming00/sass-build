@@ -115,7 +115,7 @@ if (isNaN(render_options['indentWidth'])) {
   render_options['indentWidth'] = 2;
 }
 
-render_options.functions = { svg: inliner('./icons', [options]) }
+render_options.functions = { svg: inliner('./icons', {}) }
 
 /**
  * Compile CSS
