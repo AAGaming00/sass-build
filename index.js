@@ -1,5 +1,6 @@
 const fs = require('fs');
 const sass = require('sass');
+const inliner = require('sass-inline-svg')
 const path = require('path');
 
 const version = require('./package.json').version;
@@ -114,6 +115,7 @@ if (isNaN(render_options['indentWidth'])) {
   render_options['indentWidth'] = 2;
 }
 
+render_options.functions = { svg: inliner('./icons', [options]) }
 
 /**
  * Compile CSS
