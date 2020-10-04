@@ -126,7 +126,7 @@ if (get_gha_input('debug')) {
   console.table(render_options);
 }
 console.log(render_options)
-sass.render(render_options, (sass_result) => {
+sass.render(render_options, (e, sass_result) => {
 
 /**
  * Write CSS to file path
