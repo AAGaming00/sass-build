@@ -1,5 +1,5 @@
 const fs = require('fs');
-const sass = require('sass');
+const sass = require('node-sass');
 const inliner = require('node-sass-svg/svg-function')
 const path = require('path');
 console.log('node sass 1')
