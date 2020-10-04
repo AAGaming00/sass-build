@@ -126,7 +126,8 @@ if (get_gha_input('debug')) {
   console.table(render_options);
 }
 console.log(render_options)
-sass.render(render_options).then((sass_result) => {
+const sass_result = sass.renderSync(render_options);
+
 
 /**
  * Write CSS to file path
@@ -164,6 +165,3 @@ fs.stat(destination, (err, stat) => {
     }
   });
 });
-
-})
-
