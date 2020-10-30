@@ -1,5 +1,5 @@
 const fs = require('fs');
-const sass = require('node-sass');
+const sass = require('sass');
 const inliner = require('node-sass-svg/svg-function')
 const path = require('path');
 const version = require('./package.json').version;
@@ -146,7 +146,7 @@ fs.stat(destination, (err, stat) => {
       `Warning: destination path was converted to -> "${destination}"`,
       'To avoid this warning please assign `destination` to a file path, eg...',
       '  - name: Compile CSS from SCSS files',
-      `    uses: gha-utilities/sass-build@v${version}`,
+      `    uses: AAGaming00/sass-build@v${version}`,
       '    with:',
       `      source: ${source}`,
       `      destination: ${destination}`,
